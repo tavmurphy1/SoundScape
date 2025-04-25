@@ -1,0 +1,105 @@
+/* 
+ * Author: Tavner Murphy
+ * Date: 2/10/2024
+ * React Starter App - Bootstrapped with Create React App
+ * 
+ * Source: Facebook, Inc. (2024). React Starter App. Retrieved from https://react.dev
+ * 
+ * This project was initialized using Create React App.
+ * See documentation at https://create-react-app.dev
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #2b2b2b; /* Dark background */
+  color: #ccc;
+}
+
+.login-box {
+  background: #3c3c3c;       
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  color: #ccc;
+}
+
+/* Title */
+.login-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Inter', serif;
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+/* Tagline */
+.login-tagline {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #ccc;
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.input-container {
+  margin-bottom: 15px;
+}
+
+/* Inputs */
+.login-input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #555;
+  background-color: #2b2b2b;
+  color: #fff;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Buttons: unify login & signup appearance */
+.login-button,
+.signup-button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 10px;
+  background-color: #6b4ba1; /* Purple */
+  color: #fff;              /* White text */
+  border: none;             /* No border */
+}
+
+.login-button:hover,
+.signup-button:hover {
+  background-color: #55338e; /* Darker purple on hover */
+}
+
+.or-text {
+  margin: 10px 0;
+  font-weight: bold;
+  font-family: 'Inter', sans-serif;
+  color: #ccc;
+}
+
+.login-message {
+  margin-top: 15px;
+  color: #dc3545; /* Red for errors or messages */
+  font-weight: bold;
+  font-family: 'Inter', sans-serif;
+}

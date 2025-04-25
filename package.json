@@ -1,0 +1,15 @@
+{
+    "name": "soundscape-monorepo",
+    "private": true,
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    },
+    "scripts": {
+        "start:user-auth": "cd userauth          && npm start",
+        "start:concert-log": "cd concertlog        && npm start",
+        "start:favorites": "cd favorites          && npm start",
+        "start:spotify": "cd spotifyplayer     && npm start",
+        "start:frontend": "cd app                 && npm start",
+        "start:all": "concurrently -k -c \"cyan,magenta,green,yellow,blue\" \"npm run start:user-auth\" \"npm run start:concert-log\" \"npm run start:favorites\" \"npm run start:spotify\" \"npm run start:frontend\""
+    }
+}

@@ -1,0 +1,103 @@
+/* 
+ * Author: Tavner Murphy
+ * Date: 2/10/2024
+ * React Starter App - Bootstrapped with Create React App
+ * 
+ * Source: Facebook, Inc. (2024). React Starter App. Retrieved from https://react.dev
+ * 
+ * This project was initialized using Create React App.
+ * See documentation at https://create-react-app.dev
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+.create-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: #2b2b2b; /* Dark background */
+    min-height: 100vh;
+    position: relative;
+    color: #ccc; 
+}
+
+/* Page Title */
+.create-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Inter', serif;
+    color: #fff;
+}
+
+/* Subtitle Under Title */
+.create-subtitle {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ccc;
+    font-family: 'Inter', serif;
+}
+
+/* Input Wrapper for each field */
+.input-wrapper {
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Text Input Fields */
+.create-input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #555;      /* Darker border */
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: 'Inter', serif;
+    background-color: #3c3c3c;   /* Dark input background */
+    color: #fff;                 /* Light text */
+    box-sizing: border-box;
+}
+
+/* Create Account Button */
+.create-button {
+    background-color: #6b4ba1; /* Purple accent */
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+    font-family: 'Inter', serif;
+}
+
+.create-button:hover {
+    background-color: #55338e; /* Darker purple on hover */
+}
+
+/* Home Button in top right corner */
+.home-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #6b4ba1;        /* Purple accent */
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Inter', serif;
+}
+
+.home-button:hover {
+    background: #55338e;        /* Darker purple on hover */
+}

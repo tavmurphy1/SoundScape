@@ -1,0 +1,35 @@
+/* 
+ * Author: Tavner Murphy
+ * Date: 2/10/2024
+ * React Starter App - Bootstrapped with Create React App
+ * 
+ * Source: Facebook, Inc. (2024). React Starter App. Retrieved from https://react.dev
+ * 
+ * This project was initialized using Create React App.
+ * See documentation at https://create-react-app.dev
+*/
+
+.nav-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+    z-index: 1000;
+}
+
+.nav-button {
+    background: #6b4ba1;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.nav-button:hover {
+    background: #55338e;
+}

@@ -1,0 +1,167 @@
+/* 
+ * Author: Tavner Murphy
+ * Date: 2/10/2024
+ * React Starter App - Bootstrapped with Create React App
+ * 
+ * Source: Facebook, Inc. (2024). React Starter App. Retrieved from https://react.dev
+ * 
+ * This project was initialized using Create React App.
+ * See documentation at https://create-react-app.dev
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+.concert-individual-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  box-sizing: border-box;
+  background-color: #2b2b2b; /* Dark background */
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  color: #ccc; /* Default text color */
+}
+
+.concert-individual-content {
+  background: #3c3c3c;       /* Dark card background */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Inter', serif;
+  color: #ccc;               /* Light text */
+}
+
+.concert-artist-name {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  color: #fff; /* White for emphasis */
+  font-family: 'Inter', serif;
+}
+
+.concert-venue-name {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #6b4ba1; /* Purple accent */
+  font-family: 'Inter', serif;
+}
+
+.concert-artist-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 25px;
+  font-family: 'Inter', serif;
+}
+
+.concert-individual-content p {
+  font-size: 1.2rem;
+  color: #ccc; /* Lighter text */
+  margin: 8px 0;
+  line-height: 1.3;
+  font-family: 'Inter', serif;
+}
+
+.concert-buy-button {
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s;
+  background-color: #6b4ba1; /* Purple accent */
+  color: #fff;
+  border: none;
+  margin-top: 25px;
+  font-family: 'Inter', serif;
+}
+
+.concert-buy-button:hover {
+  background-color: #55338e;
+  transform: scale(1.05);
+}
+
+/* Popup Overlay */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Popup Box */
+.popup-box {
+  background: #3c3c3c;           /* Dark box background */
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 450px;
+  width: 90%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  color: #ccc;                   /* Light text */
+}
+
+.popup-box h2 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  color: #fff;                   /* White heading */
+}
+
+.popup-box p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Continue/Confirm button */
+.popup-continue {
+  background: #6b4ba1; /* Purple accent */
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  flex-grow: 1;
+  transition: background 0.3s ease;
+}
+
+.popup-continue:hover {
+  background: #55338e;
+}
+
+/* Cancel button */
+.popup-cancel {
+  background: #3c3c3c;
+  color: #6b4ba1;
+  border: 2px solid #6b4ba1;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  flex-grow: 1;
+  transition: background 0.3s ease;
+}
+
+.popup-cancel:hover {
+  background: #2b2b2b;
+}
